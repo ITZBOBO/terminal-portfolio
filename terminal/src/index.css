@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Extra terminal styles */
+@keyframes blink { 50% { opacity: 0 } }
+.cursor { display: inline-block; width: 8px; background: currentColor; margin-left: 4px; animation: blink 1s steps(1) infinite; }
+.terminal-scroll { max-height: 60vh; overflow-y: auto; }
